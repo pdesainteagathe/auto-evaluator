@@ -124,7 +124,7 @@ def make_llm(model_version):
     return llm
 
 @st.cache_resource
-def make_retriever(splits, retriever_type, embeddings, num_neighbors, _llm):
+def make_retriever(splits, retriever_type, embeddings, num_neighbors):
 
     # Make document retriever
     # IN: list of str splits, retriever type, embedding type, number of neighbors for retrieval
